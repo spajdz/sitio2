@@ -738,3 +738,850 @@ Request URL: /sitiov2/css/bootstrap.min.css.map
 Stack Trace:
 #0 C:\wamp64\www\sitiov2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2017-11-22 09:50:14 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'enabled' => true,
+)
+Request URL: /sitio2/neumaticos/700
+Stack Trace:
+#0 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Model\Datasource\DboSource.php(271): Mysql->connect()
+#1 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Model\Model.php(3640): ConnectionManager::getDataSource('default')
+#3 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Model\Model.php(1162): Model->setDataSource('default')
+#4 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Model\Model.php(3667): Model->setSource('productos')
+#5 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Model\Model.php(3038): Model->getDataSource()
+#6 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Model\Model.php(3010): Model->_readDataSource('all', Array)
+#7 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Controller\Component\PaginatorComponent.php(212): Model->find('all', Array)
+#8 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Controller\Controller.php(1089): PaginatorComponent->paginate(NULL, Array, Array)
+#9 D:\wamp\www\sitio2\Controller\ProductosController.php(200): Controller->paginate()
+#10 [internal function]: ProductosController->categorias('neumaticos', '700')
+#11 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(ProductosController), Array)
+#12 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductosController), Object(CakeRequest))
+#14 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-11-22 09:50:15 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/favicon.ico
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 10:12:11 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/favicon.ico
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 10:13:19 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/favicon.ico
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 10:17:41 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/favicon.ico
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 10:17:43 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/favicon.ico
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 10:18:50 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/favicon.ico
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 10:18:54 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/favicon.ico
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 10:26:50 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/favicon.ico
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 10:55:10 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/favicon.ico
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 10:55:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 10:56:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 10:56:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:01:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:01:44 Error: [MissingViewException] View file "Productos\filtros.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Productos\\filtros.ctp',
+)
+Request URL: /sitio2/filtros
+Stack Trace:
+#0 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#2 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ProductosController), Object(CakeRequest))
+#4 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-11-22 11:01:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:02:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:02:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:02:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:02:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:02:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:02:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:02:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:03:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:07:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:07:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:08:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:08:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:08:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:08:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:08:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 11:08:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:02:15 Error: Fatal Error (4): syntax error, unexpected ';' in [D:\wamp\www\sitio2\Controller\ProductosController.php, line 217]
+2017-11-22 12:02:15 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /sitio2/neumaticos
+Stack Trace:
+#0 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\\wamp\\www\\sit...', 217)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\\wamp\\www\\sit...', 217, Array)
+#2 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Core\App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\\wamp\\www\\sit...', 217, Array)
+#3 D:\wamp\www\sitio2\Cake\2.10.4\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-11-22 12:02:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:02:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:02:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:10:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:10:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:10:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:10:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:10:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:11:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:11:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:14:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:14:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:14:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:14:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:17:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:17:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:17:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:17:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:17:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:17:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:17:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:17:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:17:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:17:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:18:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:19:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:19:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:19:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:20:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:20:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:20:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:20:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:20:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:20:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:21:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:21:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:21:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:21:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:21:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:22:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:22:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:22:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:22:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:22:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:22:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:22:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:23:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:29:23 Error: [MissingControllerException] Controller class AcesoriosController could not be found.
+Exception Attributes: array (
+  'class' => 'AcesoriosController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/acesorios
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:29:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:29:27 Error: [MissingControllerException] Controller class AcsesoriosController could not be found.
+Exception Attributes: array (
+  'class' => 'AcsesoriosController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/acsesorios
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:29:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:29:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:33:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:36:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:36:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:36:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:36:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:36:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-22 12:37:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /sitio2/css/bootstrap.min.css.map
+Stack Trace:
+#0 D:\wamp\www\sitio2\webroot\index.php(86): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -129,31 +129,29 @@ class ProductosController extends AppController
 	}
 
 	public function index($categoria = null){
+		$condiciones['Producto.activo'] = 1;
 
-		switch ($categoria) {
-			case 'neumaticos':
-				$categoria_id = 2;
-				break;
-			case 'llantas':
-				$categoria_id = 1;
-				break;
-			case 'accesorios':
-				$categoria_id = 3;
-				break;
-			default:
-				$categoria_id = '';
-				break;
+		if(!empty($categoria)){
+			switch ($categoria) {
+				case 'neumaticos':
+					$condiciones['Producto.categoria_id'] = 2;
+					break;
+				case 'llantas':
+					$condiciones['Producto.categoria_id'] = 1;
+					break;
+				case 'accesorios':
+					$condiciones['Producto.categoria_id'] = 3;
+					break;
+				default:
+					break;
+			}
+		}else{
+			$categoria = 'home';
 		}
-
-		if(empty($categoria_id)){
-			$this->redirect('/');
-		}
-
-		$productos = $this->Producto->find('all', array(
-			'conditions' => array(
-				'Producto.activo' => 1,
-				'Producto.categoria_id' => $categoria_id
-			),
+	
+		$this->paginate	= array(
+			'conditions' => $condiciones,
+			'limit' => 2,
 			'fields' => array(
 				'Producto.sku'
 				,'Producto.nombre'
@@ -165,9 +163,10 @@ class ProductosController extends AppController
 				,'Producto.preciofinal_publico'
 				,'Producto.preciofinal_publico'
 			)
-		));
+		);
+		$productos	= $this->paginate();
 
-		$this->set(compact('productos', 'categoria'));
+		$this->set(compact('productos', 'categoria', 'categoria_id'));
 	}
 
 	public function categorias($categoria = null, $categoria_b = null,  $subcategoria_b = null, $subsubcategoria_b = null){
@@ -191,6 +190,13 @@ class ProductosController extends AppController
 					$condiciones['Producto.aro'] = trim($subsubcategoria_b);
 				}
 			}
+		}else if($categoria == 'llantas'){
+			$condiciones['Producto.categoria_id'] = 1;
+			$condiciones['Producto.aro'] = trim($categoria_b);
+			if(!empty($subcategoria_b)){
+				$condiciones['OR']['Producto.apernadura1'] = trim($subcategoria_b);
+				$condiciones['OR']['Producto.apernadura2'] = trim($subcategoria_b);
+			}
 		}
 
 		$this->paginate	= array(
@@ -199,8 +205,56 @@ class ProductosController extends AppController
 			);
 		$productos	= $this->paginate();
 
+		$this->set(compact('productos'));
+	}
 
+	public function filtros(){
+		if($this->request->is('post')){
+			if(!empty($this->request->data['Producto']['filtro'])){
+				$this->Session->write('Filtro.texto', $this->request->data['Producto']['filtro']);
+			}
 
-		prx($productos);
+			if(!empty($this->request->data['Producto']['categoria'])){
+				$this->Session->write('Filtro.categoria', $this->request->data['Producto']['categoria']);
+			}
+		}
+
+		if(!$texto_busqueda = $this->Session->read('Filtro.texto')){
+			$this->redirect('/');
+		}
+
+		$condiciones['Producto.activo'] = 1;
+
+		if($categoria = $this->Session->read('Filtro.categoria')){
+			if($categoria == 'neumaticos'){
+				$condiciones['Producto.categoria_id'] = 2; 
+			}else if($categoria == 'llantas'){
+				$condiciones['Producto.categoria_id'] = 1; 
+			}else if($categoria == 'accesorios'){
+				$condiciones['Producto.categoria_id'] = 3; 
+			}
+		}
+
+		if(!empty($texto_busqueda)){
+			$this->paginate	= array(
+				'conditions' => array(
+					'OR' => array(
+						'Producto.sku LIKE' 		=>  sprintf('%%%s%%', $texto_busqueda),
+						'Producto.nombre LIKE' 		=>  sprintf('%%%s%%', $texto_busqueda),
+						'Producto.descripcion LIKE' =>  sprintf('%%%s%%', $texto_busqueda),
+						'Producto.apernaduras LIKE' =>  sprintf('%%%s%%', $texto_busqueda),
+						'Producto.apernadura1 LIKE' =>  sprintf('%%%s%%', $texto_busqueda),
+						'Producto.apernadura2 LIKE' =>  sprintf('%%%s%%', $texto_busqueda),
+						'Producto.aro LIKE' 		=>  sprintf('%%%s%%', $texto_busqueda),
+						'Producto.ancho LIKE' 		=>  sprintf('%%%s%%', $texto_busqueda),
+						'Producto.perfil LIKE' 		=>  sprintf('%%%s%%', $texto_busqueda),
+					),
+					'AND' => $condiciones
+				),
+				'limit' => 1
+			);
+			$productos	= $this->paginate();
+		}
+		$this->set(compact('productos', 'categoria'));
 	}
 }
