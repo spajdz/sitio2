@@ -200,6 +200,7 @@ class ProductosController extends AppController
 		$productos	= $this->paginate();
 
 
+
 		prx($productos);
 	}
 }
